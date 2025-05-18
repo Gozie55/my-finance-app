@@ -1,0 +1,276 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.last-login {
+  font-size: 12px;
+  color: #6c757d;
+  margin: 5px 0 0 0;
+}
+
+.date-display {
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.date-text {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.quick-access-section {
+  margin-bottom: 30px;
+}
+
+.quick-access-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.quick-access-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.2s;
+  border: 1px solid var(--border-color);
+}
+
+.quick-access-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.quick-access-icon {
+  background-color: rgba(0, 112, 186, 0.1);
+  color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.quick-access-card span {
+  flex: 1;
+  font-weight: 500;
+}
+
+.quick-access-card i.bi-chevron-right {
+  color: #6c757d;
+}
+
+.analytics-section {
+  margin-bottom: 30px;
+}
+
+.analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.analytics-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.analytics-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.analytics-card-header i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.analytics-card-header span {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.analytics-card-value {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.analytics-card-trend {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.analytics-card-trend.positive {
+  color: #28a745;
+}
+
+.analytics-card-trend.negative {
+  color: #dc3545;
+}
+
+.analytics-card-trend i {
+  margin-right: 5px;
+}
+
+.analytics-card-attention {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #fd7e14;
+}
+
+.analytics-card-attention i {
+  margin-right: 5px;
+}
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-bottom: 30px;
+  
+}
+
+.chart-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  width: 600px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chart-content {
+  position: relative;
+}
+
+.dashboard-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+  
+}
+
+.recent-requests {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.card-status {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  width: 625px;
+  }
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.expand-button:hover {
+  color: var(--primary-color);
+}
+
+.donut-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.donut-label {
+  display: block;
+  font-size: 10px;
+  color: #6c757d;
+}
+
+.donut-number {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.donut-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 5px 0;
+  font-size: 12px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+@media (max-width: 992px) {
+  .dashboard-charts,
+  .dashboard-bottom {
+    grid-template-columns: 1fr;
+  }
+}

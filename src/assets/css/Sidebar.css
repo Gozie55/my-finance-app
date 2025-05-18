@@ -1,0 +1,101 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden; /* hide overflow here */
+  z-index: 1000;
+}
+
+.sidebar-deco {
+  margin-bottom: 220px;
+  border-bottom: 0;
+}
+
+..logo-container {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  z-index: 1001;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.logo {
+  height: 45px !important;
+  width: 140px;
+}
+
+.sidebar-header {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6c757d;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.sidebar-item {
+  padding: 5px 0;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(0, 112, 186, 0.05);
+  color: var(--primary-color);
+  border: 0px solid var(--primary-color);
+  border-radius: 13px;
+  margin: 0 13px;
+}
+
+.sidebar-link.active {
+  background-color: rgba(0, 112, 186, 0.1);
+  color: var(--primary-color);
+  border: 0px solid var(--primary-color);
+  border-radius: 13px;
+  margin: 0 13px;
+}
+
+.sidebar-link i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.powered-by {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 10px;
+  color: #6c757d;
+  padding: 5px 0;
+  margin-left: 16px;
+}
+
+.cardinfra-logo-container {
+  padding: 5px 0;
+  margin-left: 16px;
+}
+
+.cardinfra-logo {
+  height: 50px;
+  width: 110px;
+  margin-botto
