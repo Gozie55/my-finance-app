@@ -133,10 +133,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        
-      </div>
-      <div className="sidebar-footer">
-          <div className="sidebar-item logout">
+        <div className="sidebar-item logout">
             <Link
               to="/logout"
               className={`sidebar-link ${isActive("/logout")}`}
@@ -145,6 +142,11 @@ const Sidebar = () => {
               <span>Logout</span>
             </Link>
           </div>
+
+        
+      </div>
+      <div className="sidebar-footer">
+          
 
           <div>
             <div className="powered-by">
