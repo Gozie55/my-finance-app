@@ -133,7 +133,9 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="sidebar-footer">
+        
+      </div>
+      <div className="sidebar-footer">
           <div className="sidebar-item logout">
             <Link
               to="/logout"
@@ -158,7 +160,6 @@ const Sidebar = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

@@ -1,19 +1,18 @@
 .sidebar {
   width: 250px;
-  height: 1024px;
-  background-color: white;
-  border-right: 1px solid var(--border-color);
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-right: 1px solid var(--border-color);
   position: fixed;
   top: 0;
   left: 0;
-  overflow-y: auto; 
+  overflow: hidden;
   z-index: 1000;
 }
-
 .sidebar-deco {
-  margin-bottom: 220px;
+  margin-bottom: 400px;
   border-bottom: 0;
 }
 
@@ -108,10 +107,11 @@
   margin-bottom: 100px;
 }
 
+
 .menu-scroll-area {
-  flex-grow: 1;
+  flex: 1;
   overflow-y: auto;
-  padding-right: 5px; /* optional: for space next to scrollbar */
+  padding-right: 5px;
   padding-bottom: 20px;
 }
 
